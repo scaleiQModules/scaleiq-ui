@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* Esto hace que el contenido ocupe todo el espacio restante */
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  max-height: calc(100vh - 8.25rem);
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.main-content[data-dark-mode='true'] {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--black-opacity-10);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
